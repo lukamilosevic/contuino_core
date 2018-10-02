@@ -2,6 +2,7 @@
 
 from enum import Enum
 
+
 class Events(Enum):
     """Predefined Events"""
     PICK_UP = 0
@@ -81,4 +82,3 @@ class Sensors(Enum):
     KNOCK = 36
     KEYPAD = 37
     POTENTIOMETER = 38
-

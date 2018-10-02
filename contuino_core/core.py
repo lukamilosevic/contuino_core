@@ -3,14 +3,15 @@
 import copy
 import json
 
+
 class Board:
     """Board class"""
 
-    def __init__(self, user_hash=None, name=None, message=None, actions=[]):
-        self.user_hash = user_hash
+    def __init__(self, username=None, name=None, message=None, actions=[]):
+        self.username = username
         self.name = name
         self.message = message
-    	self.actions = []
+        self.actions = []
         for action in actions:
             self.add_action(action)
 
@@ -28,6 +29,7 @@ class Board:
     def add_action(self, action):
         if isinstance(action, Action):
             self.actions.append(action)
+
 
 class Action:
     """Action class"""
